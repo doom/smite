@@ -5,6 +5,8 @@
 #ifndef SMITE_RANGE_HPP
 #define SMITE_RANGE_HPP
 
+#include <utility>
+
 namespace smite
 {
     template <typename Iter>

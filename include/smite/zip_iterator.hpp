@@ -6,6 +6,7 @@
 #define SMITE_ZIP_ITERATOR_HPP
 
 #include <iterator>
+#include <smite/range.hpp>
 #include <smite/details/fake_ptr.hpp>
 #include <smite/details/compressed_pair.hpp>
 

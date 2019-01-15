@@ -7,6 +7,7 @@
 
 #include <utility>
 #include <iterator>
+#include <smite/range.hpp>
 
 namespace smite
 {
