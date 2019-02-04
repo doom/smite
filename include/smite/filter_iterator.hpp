@@ -230,10 +230,10 @@ namespace smite
         };
     }
 
-    template <typename Transformer>
-    inline constexpr auto make_filter(Transformer &&transformer)
+    template <typename Predicate>
+    inline constexpr auto make_filter(Predicate &&predicate)
     {
-        return details::filter_maker<std::decay_t<Transformer>>{std::forward<Transformer>(transformer)};
+        return details::filter_maker<std::decay_t<Predicate>>{std::forward<Predicate>(predicate)};
     }
 }
 
