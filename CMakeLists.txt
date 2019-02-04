@@ -14,6 +14,7 @@ set(SMITE_SOURCES
         ${CMAKE_CURRENT_SOURCE_DIR}/include/smite/transform_iterator.hpp
         ${CMAKE_CURRENT_SOURCE_DIR}/include/smite/enumerate_iterator.hpp
         ${CMAKE_CURRENT_SOURCE_DIR}/include/smite/filter_iterator.hpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/include/smite/multistep_iterator.hpp
         ${CMAKE_CURRENT_SOURCE_DIR}/include/smite/zip_iterator.hpp
         ${CMAKE_CURRENT_SOURCE_DIR}/include/smite/smite.hpp
         )

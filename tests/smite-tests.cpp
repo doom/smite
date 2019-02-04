@@ -277,3 +277,16 @@ TEST(smite, combination)
 
     static_assert(smite::is_range_maker_v<decltype(take_index)>);
 }
+
+TEST(smite, step)
+{
+    std::vector<int> in(10, 0);
+    std::iota(in.begin(), in.end(), 0);
+    auto step_range = smite::step(in, 2);
+    std::vector<int> expected{0, 2, 4, 6, 8};
+    ASSERT_TRUE(std::equal(step_range.begin(), step_range.end(), expected.begin()));
+
+    auto step_range2 = smite::step(in, 3);
+    std::vector<int> expected2{0, 3, 6, 9};
+    ASSERT_TRUE(std::equal(step_range2.begin(), step_range2.end(), expected2.begin()));
+}
